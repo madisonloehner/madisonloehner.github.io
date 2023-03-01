@@ -102,6 +102,7 @@ body::-webkit-scrollbar {
  }
  .filledButton {
     background-color: #272626;
+     cursor: pointer;
     color: rgb(242, 237, 231);
     border: 0;
     font-size: 25px;
