@@ -1,0 +1,245 @@
+* {
+    box-sizing: border-box;
+  }
+html {
+    scroll-behavior: smooth;
+}
+h1 {
+    color:rgb(30, 28, 28);
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 100;
+}
+p {
+    font-family: 'Questrial', sans-serif;
+    font-weight: 300;
+    line-height: 35px;
+}
+h2 {
+    color:black;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: bold;
+}
+h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 100;
+    color: rgb(42, 41, 41);
+    letter-spacing: 1px;
+    font-size: 30px; 
+    letter-spacing: 2px;
+}
+h4 {
+    color: rgb(242, 237, 231);
+    letter-spacing: 5px;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 100;
+    font-size: 200px;
+    text-align: center;
+}
+.center-align{
+    text-align: center;
+}
+.padding {
+    padding-right: 200px;
+    padding-left:200px;
+}
+.padding-top {
+    padding-top: 50px;
+}
+body {
+    background-color: rgb(242, 237, 231);
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+.heroContainer {
+    margin: 0;
+    padding: 10px;
+    flex-direction: column;
+    min-height: 100vh; 
+    overflow: hidden;
+    display:flex;
+}
+.button {
+    font-size: 150px;
+    cursor: pointer;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    padding: auto;
+    transition-duration: .4s;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.columnR {
+    flex: 30%;
+    margin:0;
+    align-self: baseline;
+} 
+.columnL {
+    padding:100px;
+    margin:0;
+    align-self: flex-end;
+}
+.aboutContainer {
+    display: flex;
+    justify-content: space-between;
+}
+.imageColumn{
+    flex: 20%;
+    padding-top: 150px;
+    padding-right: 150px;
+}
+.contentColumn{
+    flex:80%;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+ .paragraph {
+    text-align: left;
+    width: 80%;
+    padding: fit-content
+ }
+ .filledButton {
+    background-color: #272626;
+    color: rgb(242, 237, 231);
+    border: 0;
+    font-size: 25px;
+    font-family: 'Cormorant Garamond', serif;
+    padding: 20px;
+    width: 40%;
+    border-radius: 30px;
+    align-content: center;
+    transition-duration: .4s;
+}
+.buttonContainer {
+    text-align: center;
+    flex: 1;
+    margin: 0 auto;
+    padding: 30px;
+}
+header{
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 100;
+    font-size: 200px;
+    color: rgb(242, 237, 231);
+}
+.contactBody{
+    position: absolute;
+    margin: 0px;
+    overflow: hidden;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+    background-color: rgb(25, 24, 24);
+}
+.contactContainer{
+    bottom: 0;
+    left:0;
+    position: absolute;
+    padding: 150px;
+}
+.sidebar {
+    height: 100%;
+    width: 50px;
+    top: 0;
+    left: 0;
+    margin:20px;
+    position: sticky;
+} 
+.aboutsidebar {
+    position: sticky;
+    height: 100%;
+    width: 50px;
+    top: 0;
+    left: 0;
+    margin:20px;
+}
+.rotate-text{
+    transform: rotate(270deg);
+    padding: 20px;
+    font-size:13px;
+    transition-duration: .4s;
+}
+a:link {
+    text-decoration: underline;
+    color:rgb(242, 237, 231);
+}
+a:hover{
+    color: rgb(242, 237, 231);
+    text-decoration: line-through;
+    background-color: transparent;
+}
+a:active {
+    text-decoration: underline;
+    color:rgb(242, 237, 231);
+}
+a:visited{
+    text-decoration: underline;
+    color: rgb(242, 237, 231);
+}
+a.nav:link {
+    color: rgb(42, 41, 41);
+    text-decoration: underline;
+}
+a.nav:hover {
+    color: rgb(42, 41, 41);
+    text-decoration: line-through;
+}
+a.nav:active {
+    text-decoration: underline;
+    color:rgb(42, 41, 41);
+}
+a.nav:visited{
+    text-decoration: underline;
+    color: rgb(42, 41, 41);
+}
+a.main:link{
+    color: rgb(42, 41, 41);
+    text-decoration: none;
+}
+a.main:hover{
+    color:rgb(42, 41, 41);
+    text-decoration: line-through;
+}
+ a.main:active{
+    color:rgb(42, 41, 41);
+    text-decoration: none;
+}
+a.main:visited{
+    color: rgb(42, 41, 41);
+    text-decoration: none;
+}
+.portfolio {
+    display: flex;
+    background-color: rgb(242, 237, 231);
+}
+.wrapper {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-right: 70px;
+}
+.portfolio-header{
+    background-color: rgb(25, 24, 24);
+    margin-bottom: 50px;
+}
+.portfolio-content{
+    padding: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.portfolio-column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    padding-top: 20px;
+}
+.portfolio-row:after{
+    content: "";
+    display: table;
+    clear: both;
+    padding-bottom: 50px;
+}
